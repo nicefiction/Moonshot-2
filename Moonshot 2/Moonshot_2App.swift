@@ -11,7 +11,8 @@ import SwiftUI
 struct Moonshot_2App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            // ContentView()
+         Scrolling_Data()
         }
     }
 }

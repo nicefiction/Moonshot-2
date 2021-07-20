@@ -11,6 +11,8 @@
 		0988625C26A6C1F800179B1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0988625B26A6C1F800179B1F /* ContentView.swift */; };
 		0988625E26A6C1FC00179B1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0988625D26A6C1FC00179B1F /* Assets.xcassets */; };
 		0988626126A6C1FC00179B1F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0988626026A6C1FC00179B1F /* Preview Assets.xcassets */; };
+		0988626C26A6C61100179B1F /* Resizing images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0988626B26A6C61100179B1F /* Resizing images.swift */; };
+		0988627026A6CD5300179B1F /* Scrolling Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0988626F26A6CD5300179B1F /* Scrolling Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		0988625D26A6C1FC00179B1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0988626026A6C1FC00179B1F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0988626226A6C1FC00179B1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0988626B26A6C61100179B1F /* Resizing images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resizing images.swift"; sourceTree = "<group>"; };
+		0988626F26A6CD5300179B1F /* Scrolling Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Scrolling Data.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				0988625926A6C1F800179B1F /* Moonshot_2App.swift */,
+				0988626926A6C26000179B1F /* Day 39 */,
 				0988625B26A6C1F800179B1F /* ContentView.swift */,
 				0988625D26A6C1FC00179B1F /* Assets.xcassets */,
 				0988626226A6C1FC00179B1F /* Info.plist */,
@@ -67,6 +72,15 @@
 				0988626026A6C1FC00179B1F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0988626926A6C26000179B1F /* Day 39 */ = {
+			isa = PBXGroup;
+			children = (
+				0988626B26A6C61100179B1F /* Resizing images.swift */,
+				0988626F26A6CD5300179B1F /* Scrolling Data.swift */,
+			);
+			path = "Day 39";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0988625C26A6C1F800179B1F /* ContentView.swift in Sources */,
+				0988626C26A6C61100179B1F /* Resizing images.swift in Sources */,
+				0988627026A6CD5300179B1F /* Scrolling Data.swift in Sources */,
 				0988625A26A6C1F800179B1F /* Moonshot_2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
