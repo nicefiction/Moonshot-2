@@ -36,21 +36,21 @@ struct Scrolling_Data: View {
    
    var body: some View {
       
-//      ScrollView(.vertical) {
-//         VStack(spacing: 10.0) {
-//            ForEach(1..<100) { (number: Int) in
-//               // Text("Hello 👋 World 🌍")
-//               CustomText("Item \(number)")
-//                  .font(.title)
-//            }
-//         }
-//         .frame(maxWidth: .infinity)
-//      } // With a ScrollView , Xcode creates all the instances of CustomText immediately .
-      List {
-         ForEach(0..<100) {
-            CustomText("Hello \($0)")
+      ScrollView(.vertical) {
+         VStack(spacing: 10.0) {
+            ForEach(1..<100) { (number: Int) in
+               // Text("Hello 👋 World 🌍")
+               CustomText("Item \(number)")
+                  .font(.title)
+            }
          }
-      } // With a List , Xcode creates instances of CustomText only when really needed . The code acts lazily .
+         .frame(maxWidth: .infinity)
+      } // With a ScrollView , Xcode creates all the instances of CustomText immediately .
+//      List {
+//         ForEach(0..<100) {
+//            CustomText("Hello \($0)")
+//         }
+//      } // With a List , Xcode creates instances of CustomText only when really needed . The code acts lazily .
    }
 }
 
