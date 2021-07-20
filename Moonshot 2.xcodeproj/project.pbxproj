@@ -14,6 +14,7 @@
 		0988626C26A6C61100179B1F /* Resizing images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0988626B26A6C61100179B1F /* Resizing images.swift */; };
 		0988627026A6CD5300179B1F /* Scrolling Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0988626F26A6CD5300179B1F /* Scrolling Data.swift */; };
 		0988627426A71A9D00179B1F /* Using NavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0988627326A71A9D00179B1F /* Using NavigationLink.swift */; };
+		0988627726A71F6500179B1F /* Hierarchical Codable data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0988627626A71F6500179B1F /* Hierarchical Codable data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		0988626B26A6C61100179B1F /* Resizing images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resizing images.swift"; sourceTree = "<group>"; };
 		0988626F26A6CD5300179B1F /* Scrolling Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Scrolling Data.swift"; sourceTree = "<group>"; };
 		0988627326A71A9D00179B1F /* Using NavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Using NavigationLink.swift"; sourceTree = "<group>"; };
+		0988627626A71F6500179B1F /* Hierarchical Codable data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hierarchical Codable data.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				0988626B26A6C61100179B1F /* Resizing images.swift */,
 				0988626F26A6CD5300179B1F /* Scrolling Data.swift */,
 				0988627326A71A9D00179B1F /* Using NavigationLink.swift */,
+				0988627626A71F6500179B1F /* Hierarchical Codable data.swift */,
 			);
 			path = "Day 39";
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0988625C26A6C1F800179B1F /* ContentView.swift in Sources */,
+				0988627726A71F6500179B1F /* Hierarchical Codable data.swift in Sources */,
 				0988626C26A6C61100179B1F /* Resizing images.swift in Sources */,
 				0988627426A71A9D00179B1F /* Using NavigationLink.swift in Sources */,
 				0988627026A6CD5300179B1F /* Scrolling Data.swift in Sources */,
