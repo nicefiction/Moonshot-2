@@ -10,7 +10,7 @@ extension Bundle {
    // -> [Astronaut] {
    -> T {
       
-      // STEP 1 — Locate the file :
+      /// `STEP 1` — Locate the file :
       
       guard
          let _url = self.url(forResource: file,
@@ -21,7 +21,7 @@ extension Bundle {
       }
       
       
-      // STEP 2 — Load the file :
+      /// `STEP 2` — Load the file :
       
       guard
          let _data = try? Data(contentsOf: _url)
@@ -36,9 +36,13 @@ extension Bundle {
       }
       
       
-      // STEP 3 — Decode the file :
+      /// `STEP 3` — Decode the file :
       
       let jsonDecoder = JSONDecoder()
+      let dateFormatter = DateFormatter()
+      /// Tells the jsonDecoder to parse dates in the exact format we expect :
+      dateFormatter.dateFormat = "y-MM-dd"
+      jsonDecoder.dateDecodingStrategy = .formatted(dateFormatter)
       
       guard
          let _decodedData = try? jsonDecoder.decode(T.self,
@@ -49,7 +53,7 @@ extension Bundle {
       }
       
       
-      // STEP 4 — Return the decoded data :
+      /// `STEP 4` — Return the decoded data :
       
       return _decodedData
    }
