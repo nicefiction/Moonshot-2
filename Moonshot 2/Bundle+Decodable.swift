@@ -6,8 +6,9 @@ import Foundation
 
 extension Bundle {
    
-   func decode(_ file: String)
-   -> [Astronaut] {
+   func decode<T: Codable>(_ file: String)
+   // -> [Astronaut] {
+   -> T {
       
       // STEP 1 — Locate the file :
       
@@ -40,7 +41,7 @@ extension Bundle {
       let jsonDecoder = JSONDecoder()
       
       guard
-         let _decodedData = try? jsonDecoder.decode([Astronaut].self,
+         let _decodedData = try? jsonDecoder.decode(T.self,
                                                     from: _data)
       else {
          

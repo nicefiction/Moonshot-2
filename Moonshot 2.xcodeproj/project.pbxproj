@@ -19,6 +19,7 @@
 		0988627E26A801CA00179B1F /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = 0988627D26A801CA00179B1F /* missions.json */; };
 		0988628226A8046700179B1F /* Astronaut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0988628126A8046700179B1F /* Astronaut.swift */; };
 		0988628626A809CB00179B1F /* Bundle+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0988628526A809CB00179B1F /* Bundle+Decodable.swift */; };
+		0988628A26A81C7200179B1F /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0988628926A81C7200179B1F /* Mission.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		0988627D26A801CA00179B1F /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missions.json; sourceTree = "<group>"; };
 		0988628126A8046700179B1F /* Astronaut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronaut.swift; sourceTree = "<group>"; };
 		0988628526A809CB00179B1F /* Bundle+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Decodable.swift"; sourceTree = "<group>"; };
+		0988628926A81C7200179B1F /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				0988627A26A801BE00179B1F /* astronauts.json */,
 				0988627D26A801CA00179B1F /* missions.json */,
 				0988628126A8046700179B1F /* Astronaut.swift */,
+				0988628926A81C7200179B1F /* Mission.swift */,
 				0988628526A809CB00179B1F /* Bundle+Decodable.swift */,
 				0988626926A6C26000179B1F /* Day 39 */,
 				0988625B26A6C1F800179B1F /* ContentView.swift */,
@@ -178,6 +181,7 @@
 				0988626C26A6C61100179B1F /* Resizing images.swift in Sources */,
 				0988628226A8046700179B1F /* Astronaut.swift in Sources */,
 				0988627426A71A9D00179B1F /* Using NavigationLink.swift in Sources */,
+				0988628A26A81C7200179B1F /* Mission.swift in Sources */,
 				0988627026A6CD5300179B1F /* Scrolling Data.swift in Sources */,
 				0988625A26A6C1F800179B1F /* Moonshot_2App.swift in Sources */,
 			);

@@ -2,13 +2,23 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
+   
+   // MARK: - PROPERTIES
+   
+   let astronauts: [Astronaut] = Bundle.main.decode("astronauts.json")
+   let missions: [Mission] = Bundle.main.decode("missions.json")
+   
    
    // MARK: - COMPUTED PROPERTIES
    
    var body: some View {
-      Text("Hello, world!")
-         .padding()
+      
+      Text("\(astronauts.count) astronauts")
+         .font(.largeTitle)
+         .fontWeight(.semibold)
    }
 }
 
