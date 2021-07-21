@@ -34,7 +34,7 @@ struct Hierarchical_Codable_data: View {
                   "city": "Emerald"
                }
             }
-         """
+         """.data(using: .utf8)! // OLIVIER
          
          
 //         struct Human: Codable {
@@ -51,9 +51,11 @@ struct Hierarchical_Codable_data: View {
 //         }
          
 
-         let data = Data(input.utf8)
+         // let data = Data(input.utf8) // PAUL
          let jsonDecoder = JSONDecoder()
-         if let _human = try? jsonDecoder.decode(Human.self, from: data) {
+         if let _human = try? jsonDecoder.decode(Human.self,
+                                                 // from: data) { // PAUL
+                                                 from: input) { // OLIVIER
             print(_human.address.street)
          }
       }

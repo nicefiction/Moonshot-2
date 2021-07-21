@@ -1,21 +1,27 @@
-//
 //  ContentView.swift
-//  Moonshot 2
-//
-//  Created by Olivier Van hamme on 20/07/2021.
-//
 
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
-    }
+   
+   // MARK: - COMPUTED PROPERTIES
+   
+   var body: some View {
+      Text("Hello, world!")
+         .padding()
+   }
 }
 
+
+
+
+
+// MARK: - PREVIEWS -
+
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+   
+   static var previews: some View {
+      
+      ContentView()
+   }
 }

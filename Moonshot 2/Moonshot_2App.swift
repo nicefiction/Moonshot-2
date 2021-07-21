@@ -9,10 +9,11 @@ import SwiftUI
 
 @main
 struct Moonshot_2App: App {
-    var body: some Scene {
-        WindowGroup {
-            // ContentView()
-         Scrolling_Data()
-        }
-    }
+   var body: some Scene {
+      WindowGroup {
+         ContentView()
+         // Scrolling_Data()
+         // Hierarchical_Codable_data()
+      }
+   }
 }
