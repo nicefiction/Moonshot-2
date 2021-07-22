@@ -3,9 +3,9 @@
 import Foundation
 
 
+
 struct Mission: Codable,
                 Identifiable {
-   
    
    // MARK: - NESTED TYPES
    
