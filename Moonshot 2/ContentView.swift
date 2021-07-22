@@ -20,7 +20,8 @@ struct ContentView: View {
       NavigationView {
          List {
             ForEach(missions) { (mission: Mission) in
-               NavigationLink(destination: Text("Detailview \(mission.displayName)")) {
+               NavigationLink(destination: MissionView(mission: mission,
+                                                       astronauts: astronauts)) {
                   HStack {
                      Image(mission.imageName)
                         .resizable()
