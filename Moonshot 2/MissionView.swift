@@ -63,20 +63,22 @@ struct MissionView: View {
                ForEach(astronauts,
                        id: \.astronaut.name) { (crewMember: CrewMember) in
                   
-                  HStack {
-                     Image(crewMember.astronaut.id)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 100)
-                        .clipShape(Capsule())
-                     VStack(alignment: .leading) {
-                        Text(crewMember.astronaut.name)
-                           .font(.headline)
-                        Text(crewMember.role)
-                           .font(.subheadline)
-                           .foregroundColor(Color.gray)
+                  NavigationLink(destination: AstronautView(astronaut: crewMember.astronaut)) {
+                     HStack {
+                        Image(crewMember.astronaut.id)
+                           .resizable()
+                           .scaledToFit()
+                           .frame(width: 100)
+                           .clipShape(Capsule())
+                        VStack(alignment: .leading) {
+                           Text(crewMember.astronaut.name)
+                              .font(.headline)
+                           Text(crewMember.role)
+                              .font(.subheadline)
+                              .foregroundColor(Color.gray)
+                        }
+                        Spacer()
                      }
-                     Spacer()
                   }
                }
                Spacer(minLength: 25) // The Spacer has a guaranteed minimum height of at least 25 points .
