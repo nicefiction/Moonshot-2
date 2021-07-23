@@ -77,6 +77,7 @@
 				0988625926A6C1F800179B1F /* Moonshot_2App.swift */,
 				0988627A26A801BE00179B1F /* astronauts.json */,
 				0988627D26A801CA00179B1F /* missions.json */,
+				0988625D26A6C1FC00179B1F /* Assets.xcassets */,
 				0988628126A8046700179B1F /* Astronaut.swift */,
 				0988628926A81C7200179B1F /* Mission.swift */,
 				0988628526A809CB00179B1F /* Bundle+Decodable.swift */,
@@ -84,7 +85,6 @@
 				0988625B26A6C1F800179B1F /* ContentView.swift */,
 				09E63E2826A9574800D5A27A /* MissionView.swift */,
 				09E63E2E26A9F7D200D5A27A /* AstronautView.swift */,
-				0988625D26A6C1FC00179B1F /* Assets.xcassets */,
 				0988626226A6C1FC00179B1F /* Info.plist */,
 				0988625F26A6C1FC00179B1F /* Preview Content */,
 			);

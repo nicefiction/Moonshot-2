@@ -10,6 +10,28 @@ struct AstronautView: View {
    // MARK: - PROPERTIES
    
    let astronaut: Astronaut
+   var missions: [Mission]
+   
+   
+   
+   // MARK: - INITIALIZER METHODS
+   
+   init(astronaut: Astronaut,
+        missions: [Mission]) {
+      
+      self.astronaut = astronaut
+      var matchedMissions = Array<Mission>()
+      
+      for mission in missions {
+         if let _ = mission.crew.first(where: { (crewRole: Mission.CrewRole) in
+            crewRole.name == astronaut.id
+         }) {
+            matchedMissions.append(mission)
+         }
+      }
+      
+      self.missions = matchedMissions
+   }
    
    
    
@@ -24,8 +46,12 @@ struct AstronautView: View {
                   .resizable()
                   .scaledToFit()
                   .clipShape(Capsule())
+               ForEach(missions) { (mission: Mission) in
+                  Text(mission.displayName)
+                     .font(.headline)
+               }
                Text(astronaut.description)
-                  .padding(.top)
+                  .padding(.top, 5.0)
                   .layoutPriority(1)
                /**
                 Layout priority lets us control how readily a view shrinks when space is limited ,
@@ -54,12 +80,14 @@ struct AstronautView_Previews: PreviewProvider {
    // MARK: - PROPERTIES
    
    static let astronauts: [Astronaut] = Bundle.main.decode("astronauts.json")
+   static let missions: [Mission] = Bundle.main.decode("missions.json")
    
    
    // MARK: - COMPUTED PROPERTIES
    
    static var previews: some View {
       
-      AstronautView(astronaut: astronauts[0])
+      AstronautView(astronaut: astronauts[0],
+                    missions: missions)
    }
 }
