@@ -59,6 +59,12 @@ struct MissionView: View {
                   .resizable()
                   .scaledToFit()
                   .frame(width: (geometryProxy.size.width * 0.7))
+               HStack {
+                  Text("Launch Date :")
+                     .fontWeight(.semibold)
+                  Text(mission.formattedLaunchDate)
+                  Spacer()
+               }
                Text(mission.description)
                ForEach(astronauts,
                        id: \.astronaut.name) { (crewMember: CrewMember) in
