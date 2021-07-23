@@ -6,6 +6,12 @@ import SwiftUI
 
 struct ContentView: View {
    
+   // MARK: - PROPERTY WRAPPERS
+   
+   @State private var isShowingCrewNames: Bool = false
+   
+   
+   
    // MARK: - PROPERTIES
    
    let astronauts: [Astronaut] = Bundle.main.decode("astronauts.json")
@@ -31,7 +37,9 @@ struct ContentView: View {
                      VStack(alignment: .leading) {
                         Text(mission.displayName)
                            .font(.headline)
-                        Text(mission.formattedLaunchDate)
+                        Text(isShowingCrewNames
+                              ? mission.crew.map { $0.name }.joined(separator: ", ")
+                              : mission.formattedLaunchDate)
                            .font(.subheadline)
                      }
                   }
@@ -39,6 +47,9 @@ struct ContentView: View {
             }
          }
          .navigationBarTitle("Moonshot")
+         .navigationBarItems(trailing: Button(isShowingCrewNames ? "Show Launch Dates" : "Show Crew Names") {
+            isShowingCrewNames.toggle()
+         })
       }
    }
 }
