@@ -62,12 +62,15 @@ struct MissionView: View {
                   .resizable()
                   .scaledToFit()
                   .frame(width: (geometryProxy.size.width * 0.7))
+                  .accessibility(label: Text("\(mission.imageName) Mission"))
                HStack {
                   Text("Launch Date :")
                      .fontWeight(.semibold)
                   Text(mission.formattedLaunchDate)
                   Spacer()
                }
+               .accessibilityElement(children: .ignore)
+               .accessibility(label: Text("Launch Date: \(mission.formattedLaunchDate)"))
                Text(mission.description)
                ForEach(astronauts,
                        id: \.astronaut.name) { (crewMember: CrewMember) in
@@ -80,12 +83,15 @@ struct MissionView: View {
                            .scaledToFit()
                            .frame(width: 100)
                            .clipShape(Capsule())
+                           .accessibility(label: Text(crewMember.astronaut.name))
                         VStack(alignment: .leading) {
                            Text(crewMember.astronaut.name)
                               .font(.headline)
+                              .accessibility(hidden: true)
                            Text(crewMember.role)
                               .font(.subheadline)
                               .foregroundColor(Color.gray)
+                              .accessibility(label: Text("Role: \(crewMember.role)"))
                         }
                         Spacer()
                      }

@@ -46,9 +46,11 @@ struct AstronautView: View {
                   .resizable()
                   .scaledToFit()
                   .clipShape(Capsule())
+                  .accessibility(label: Text("\(astronaut.name)"))
                ForEach(missions) { (mission: Mission) in
                   Text(mission.displayName)
                      .font(.headline)
+                     .accessibility(label: Text("\(mission.displayName) mission"))
                }
                Text(astronaut.description)
                   .padding(.top, 5.0)

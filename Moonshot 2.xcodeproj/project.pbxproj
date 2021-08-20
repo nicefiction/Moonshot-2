@@ -74,18 +74,12 @@
 		0988625826A6C1F800179B1F /* Moonshot 2 */ = {
 			isa = PBXGroup;
 			children = (
-				0988625926A6C1F800179B1F /* Moonshot_2App.swift */,
-				0988627A26A801BE00179B1F /* astronauts.json */,
-				0988627D26A801CA00179B1F /* missions.json */,
-				0988625D26A6C1FC00179B1F /* Assets.xcassets */,
-				0988628126A8046700179B1F /* Astronaut.swift */,
-				0988628926A81C7200179B1F /* Mission.swift */,
-				0988628526A809CB00179B1F /* Bundle+Decodable.swift */,
 				0988626926A6C26000179B1F /* Day 39 */,
-				0988625B26A6C1F800179B1F /* ContentView.swift */,
-				09E63E2826A9574800D5A27A /* MissionView.swift */,
-				09E63E2E26A9F7D200D5A27A /* AstronautView.swift */,
+				0988625926A6C1F800179B1F /* Moonshot_2App.swift */,
 				0988626226A6C1FC00179B1F /* Info.plist */,
+				09F8B69C26CFA43200943017 /* Model */,
+				09F8B69E26CFA44300943017 /* View */,
+				0988625D26A6C1FC00179B1F /* Assets.xcassets */,
 				0988625F26A6C1FC00179B1F /* Preview Content */,
 			);
 			path = "Moonshot 2";
@@ -108,6 +102,28 @@
 				0988627626A71F6500179B1F /* Hierarchical Codable data.swift */,
 			);
 			path = "Day 39";
+			sourceTree = "<group>";
+		};
+		09F8B69C26CFA43200943017 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0988627A26A801BE00179B1F /* astronauts.json */,
+				0988627D26A801CA00179B1F /* missions.json */,
+				0988628126A8046700179B1F /* Astronaut.swift */,
+				0988628926A81C7200179B1F /* Mission.swift */,
+				0988628526A809CB00179B1F /* Bundle+Decodable.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		09F8B69E26CFA44300943017 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0988625B26A6C1F800179B1F /* ContentView.swift */,
+				09E63E2826A9574800D5A27A /* MissionView.swift */,
+				09E63E2E26A9F7D200D5A27A /* AstronautView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
